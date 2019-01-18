@@ -1,0 +1,78 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+
+.Forms {
+    //display: table;
+     
+    .container {
+      @include ms-Grid;
+    }
+
+
+
+    .row {
+    @include ms-Grid-row;
+    }
+
+    .heading {
+      @include ms-font-su;
+      //@include ms-fontColor-themePrimary;
+      background-color: $ms-color-neutralTertiary;
+
+    }
+
+    .subheading {
+      @include ms-font-su;
+      //@include ms-fontColor-themePrimary;
+      background-color: $ms-color-magentaLight;
+
+    }
+
+    .loadingWrapper
+    {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .column  {
+      @include ms-Grid-col;
+      @include ms-sm6;
+      @include ms-md6;
+      @include ms-lg6;
+      }
+
+    // .column  {
+    //   @include ms-Grid-col;
+    //   @include ms-sm3;
+    //   @include ms-md3;
+    //   @include ms-lg3;
+    //   }
+
+    .textField {
+      display: table-cell;
+      width: 100%;
+
+      input {
+        height: 32px;
+        min-width: 80px;
+      }
+    }
+
+    .buttonMargin {
+      margin-top: 25px;
+    }
+
+    .addButtonCell {
+      display: table-cell;
+      vertical-align: top;
+
+      .addButton {
+        margin-left: 10px;
+        white-space: nowrap;
+        height: 32px;
+      }
+
+    }
+  }
+
+  .hidden { display:none; }

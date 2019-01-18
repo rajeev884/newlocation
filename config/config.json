@@ -1,0 +1,27 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "candidate-information-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/candidateInformation/CandidateInformationWebPart.js",
+          "manifest": "./src/webparts/candidateInformation/CandidateInformationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "bootstrap"
+    },
+    "jquery": {
+      "path": "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js",
+      "globalName": "jQuery"
+}
+},
+  "localizedResources": {
+    "CandidateInformationWebPartStrings": "lib/webparts/candidateInformation/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "employee-joining-webpart-client-side-solution",
+    "id": "e364adc8-06c1-4afb-ad51-34f3c2b6951b",
+    "version": "1.0.0.7",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/employee-joining-webpart.sppkg"
+  }
+}
